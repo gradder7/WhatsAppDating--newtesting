@@ -1,3 +1,32 @@
+import { motion } from 'framer-motion';
+import Link from 'next/link';
+
+import WAButton from './Buttons';
+
+export default function Navbar() {
+  return (
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 3 }}
+      transition={{ duration: 1, ease: 'easeInOut' }}
+      // eslint-disable-next-line tailwindcss/no-custom-classname
+      className="shadow-black-600/20 sticky top-0 z-30 mr-12 -mb-20 flex w-full justify-between bg-white p-2 shadow-xl sm:px-4 md:py-0"
+    >
+      <div className="flex items-center py-2">
+        <div className="mr-4 flex gap-4 text-black">
+          <Link className="mr-2" href="/">
+            <h1 className="text-xl md:text-2xl">FATE</h1>
+          </Link>
+        </div>
+      </div>
+      <div className="flex items-center py-2">
+        {/* <p className="text-sm md:text-lg">Your Text Here</p> */}
+        <WAButton />
+      </div>
+    </motion.div>
+  );
+}
+
 // import Link from 'next/link';
 
 // export default function Navbar() {
@@ -55,32 +84,3 @@
 //     </motion.div>
 //   );
 // }
-
-import { motion } from 'framer-motion';
-import Link from 'next/link';
-
-import WAButton from './Buttons';
-
-export default function Navbar() {
-  return (
-    <motion.div
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 3 }}
-      transition={{ duration: 1 }}
-      // eslint-disable-next-line tailwindcss/no-custom-classname
-      className="shadow-black-600/20 sticky top-0 z-30 mr-12 -mb-20 flex w-full justify-between bg-white p-2 shadow-xl sm:px-4 md:py-0"
-    >
-      <div className="flex items-center py-2">
-        <div className="mr-4 flex gap-4 text-black">
-          <Link className="mr-2" href="/">
-            <h1 className="text-xl md:text-2xl">FATE</h1>
-          </Link>
-        </div>
-      </div>
-      <div className="flex items-center py-2">
-        {/* <p className="text-sm md:text-lg">Your Text Here</p> */}
-        <WAButton />
-      </div>
-    </motion.div>
-  );
-}

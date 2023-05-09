@@ -2,56 +2,43 @@ import { motion, useAnimation } from 'framer-motion';
 import React from 'react';
 import { useInView } from 'react-intersection-observer';
 
-import { imageVariants, textVariants } from './variants';
+import { bottomToTop, topToBottom } from './variants';
 
 const ProductSection = () => {
   const { ref, inView } = useInView();
   const animation = useAnimation();
   React.useEffect(() => {
     if (inView) {
-      animation.start({
-        opacity: 1,
-        transition: { duration: 0.8, ease: 'easeInOut' },
-      });
+      animation.start('visible');
     } else {
-      animation.start({
-        opacity: 0,
-        transition: { duration: 0.8, ease: 'easeInOut' },
-      });
+      animation.start('hidden');
     }
   }, [animation, inView]);
 
   return (
-    <section className="flex flex-col py-20 px-6 md:flex-row">
+    <section ref={ref} className="flex flex-col py-20 px-6 md:flex-row">
       <motion.div
-        ref={ref}
         className="flex items-center justify-center md:w-1/2"
         initial="hidden"
-        animate={inView ? 'visible' : 'hidden'}
-        variants={imageVariants}
+        animate={animation}
+        variants={topToBottom}
       >
         <div className="mx-auto max-w-xs md:max-w-full">
-          <motion.img
+          <img
             src="https://talk2stranger.com/talk2/img/profile.svg"
             alt="Product Image"
             width={400}
             height={400}
-            initial="hidden"
-            animate={inView ? 'visible' : 'hidden'}
-            variants={imageVariants}
           />
         </div>
       </motion.div>
       <motion.div
         className="mt-8 md:mt-0 md:w-1/2 md:pl-10"
-        initial="hidden"
-        animate={inView ? 'visible' : 'hidden'}
-        variants={textVariants}
+        variants={bottomToTop}
+        animate={animation}
       >
-        <motion.h2 className="mb-6 text-4xl font-bold" variants={textVariants}>
-          Introducing Our New Product
-        </motion.h2>
-        <motion.p className="mb-6 text-lg" variants={textVariants}>
+        <h2 className="mb-6 text-4xl font-bold">Introducing Our New Product</h2>
+        <p className="mb-6 text-lg">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non
           risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec,
           ultricies sed, dolor. Lorem ipsum dolor sit amet consectetur
@@ -60,12 +47,11 @@ const ProductSection = () => {
           aut tempora adipisci ut sint vero maxime facilis sapiente! Ipsum esse
           iure assumenda inventore. Eveniet voluptatum quos iste blanditiis qui
           assumenda dolor provident culpa ea.
-        </motion.p>
+        </p>
         <motion.button
           className="rounded-lg bg-gradient-to-r from-red-400 via-red-500 to-red-600 px-6 py-3 text-white shadow-md transition-shadow duration-300 hover:shadow-lg focus:outline-none focus:ring-4 focus:ring-red-300"
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
-          variants={textVariants}
         >
           Learn More
         </motion.button>

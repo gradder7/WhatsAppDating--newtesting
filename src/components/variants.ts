@@ -46,3 +46,51 @@ export const textVariants: Variants = {
     y: 50,
   },
 };
+
+// new variants
+export const topToBottom: Variants = {
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: { duration: 1, ease: 'easeInOut' },
+  },
+  hidden: {
+    opacity: 0,
+    y: -100,
+  },
+};
+
+export const bottomToTop: Variants = {
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: { duration: 1, ease: 'easeInOut' },
+  },
+  hidden: {
+    opacity: 0,
+    y: 100,
+  },
+};
+
+export const leftToRight: Variants = {
+  visible: {
+    opacity: 1,
+    x: 0,
+    transition: { duration: 1, ease: 'easeInOut' },
+  },
+  hidden: {
+    opacity: 0,
+    x: -100,
+  },
+};
+export const rightToLeft: Variants = {
+  visible: {
+    opacity: 1,
+    x: 0,
+    transition: { duration: 1, ease: 'easeInOut' },
+  },
+  hidden: {
+    opacity: 0,
+    x: 10,
+  },
+};

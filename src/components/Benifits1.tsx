@@ -5,29 +5,30 @@ import { motion, useAnimation } from 'framer-motion';
 import { useEffect } from 'react';
 import { useInView } from 'react-intersection-observer';
 
-import { imageVariants, textVariants } from './variants';
+import { bottomToTop, leftToRight } from './variants';
 
 const Benifits1 = () => {
-  const controls = useAnimation();
+  const animation = useAnimation();
   const [ref, inView] = useInView();
 
   useEffect(() => {
     if (inView) {
-      controls.start('visible');
+      animation.start('visible');
     } else {
-      controls.start('hidden');
+      animation.start('hidden');
     }
-  }, [controls, inView]);
+  }, [animation, inView]);
 
   return (
-    <div className="flex flex-col items-center justify-center bg-gray-100 py-12 px-4 md:flex-row md:px-24 lg:px-48">
+    <div
+      ref={ref}
+      className="flex flex-col items-center justify-center bg-gray-100 py-12 px-4 md:flex-row md:px-24 lg:px-48"
+    >
       {/* Image on left */}
       <motion.div
         className="mb-8 w-full md:mb-0 md:mr-10 md:w-1/2"
-        ref={ref}
-        animate={controls}
-        initial="hidden"
-        variants={imageVariants}
+        animate={animation}
+        variants={leftToRight}
       >
         <img
           src="https://shagle.com/assets/img/landing/free.svg"
@@ -40,10 +41,8 @@ const Benifits1 = () => {
       {/* Text on right */}
       <motion.div
         className="w-full md:w-1/2 md:pl-8"
-        ref={ref}
-        animate={controls}
-        initial="hidden"
-        variants={textVariants}
+        animate={animation}
+        variants={bottomToTop}
       >
         <h2 className="mb-4 text-3xl font-bold md:text-4xl">
           Title of the text
