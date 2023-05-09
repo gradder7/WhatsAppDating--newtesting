@@ -1,6 +1,6 @@
 import WAButton from './Buttons';
 
-const TwoColumnComponent = () => {
+const Usage = () => {
   return (
     <section className="flex flex-col items-center justify-center">
       <div className="flex flex-col border-b-2 md:flex-row md:items-center">
@@ -32,4 +32,4 @@ const TwoColumnComponent = () => {
   );
 };
 
-export default TwoColumnComponent;
+export default Usage;

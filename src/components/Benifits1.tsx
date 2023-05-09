@@ -7,7 +7,7 @@ import { useInView } from 'react-intersection-observer';
 
 import { imageVariants, textVariants } from './variants';
 
-const ImageTextIcons = () => {
+const Benifits1 = () => {
   const controls = useAnimation();
   const [ref, inView] = useInView();
 
@@ -80,7 +80,7 @@ const ImageTextIcons = () => {
   );
 };
 
-export default ImageTextIcons;
+export default Benifits1;
 
 // // const Feature = () => {
 //   return (

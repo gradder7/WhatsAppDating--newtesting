@@ -1,4 +1,4 @@
-const ImageTextIcons = () => {
+const Benifits2 = () => {
   return (
     <div className="flex flex-col items-center justify-center py-12 px-4 md:flex-row md:px-24 lg:px-48">
       <div className="w-full md:w-1/2 md:pl-8">
@@ -22,4 +22,4 @@ const ImageTextIcons = () => {
     </div>
   );
 };
-export default ImageTextIcons;
+export default Benifits2;

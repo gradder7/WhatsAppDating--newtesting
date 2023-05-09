@@ -12,7 +12,7 @@ const Footer = () => {
             </div>
             <div>
               <span className="mr-4 block md:inline-block">
-                <Link href="/privacyNew">
+                <Link href="/privacy">
                   <span className="cursor-pointer hover:text-white">
                     Privacy Policy
                   </span>

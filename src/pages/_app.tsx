@@ -6,7 +6,7 @@ import { useEffect } from 'react';
 import type { TagManagerArgs } from 'react-gtm-module';
 import TagManager from 'react-gtm-module';
 
-import FooterNew from '@/components/FooterNew';
+import FooterNew from '@/components/Footer';
 import Navbar from '@/components/Navbar';
 // import { BackToTopButton } from '@/components/Buttons';
 import SEOtags from '@/components/SEOtags';
@@ -23,11 +23,11 @@ function MyApp({ Component, pageProps }: AppProps) {
     <>
       <DefaultSeo {...SeoConfig} />
       <SEOtags />
+      <Navbar />
       <main className="mb-auto">
-        <Navbar />
         <Component {...pageProps} />
-        <FooterNew />
       </main>
+      <FooterNew />
       {/* <BackToTopButton /> */}
     </>
   );
