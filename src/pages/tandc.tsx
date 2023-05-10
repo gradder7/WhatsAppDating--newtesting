@@ -148,7 +148,7 @@ const PrivacyPolicy = () => {
         transition={{ duration: 1, ease: 'easeInOut' }}
         className="mb-8 text-center text-3xl font-bold"
       >
-        Privacy Policy
+        Terms and Conditions
       </motion.h1>
       <motion.div
         initial={{ opacity: 0, x: -50 }}
@@ -158,60 +158,46 @@ const PrivacyPolicy = () => {
         <section className="mb-12">
           <h2 className="mb-4 text-2xl font-bold">Introduction</h2>
           <p className="leading-7 text-gray-700">
-            Our website is committed to protecting the privacy and security of
-            its personal information. This Privacy Policy explains how we
-            collect, use, and safeguard the personal information provided to us
-            through the website.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis
+            semper justo. Sed sed purus quis neque tempus molestie sed vel elit.
+            Integer in tellus sit amet est vestibulum sollicitudin eu ac lectus.
+            Aenean bibendum ex euismod odio posuere malesuada.
           </p>
         </section>
         <section className="mb-12">
           <h2 className="mb-4 text-2xl font-bold">Data Collection</h2>
           <p className="leading-7 text-gray-700">
-            We collect personal information from our users when they voluntarily
-            provide it to us through the website, such as when they register for
-            an account or sign up for our newsletter. This personal information
-            may include their name, email address, and other contact
-            information.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis
+            semper justo. Sed sed purus quis neque tempus molestie sed vel elit.
+            Integer in tellus sit amet est vestibulum sollicitudin eu ac lectus.
+            Aenean bibendum ex euismod odio posuere malesuada.
           </p>
         </section>
         <section className="mb-12">
           <h2 className="mb-4 text-2xl font-bold">Cookies</h2>
           <p className="leading-7 text-gray-700">
-            Our website uses cookies to enhance the user experience and provide
-            personalized content and advertising. Cookies are small data files
-            that are placed on a device when they visit our website. Users can
-            control the use of cookies through their browser settings.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis
+            semper justo. Sed sed purus quis neque tempus molestie sed vel elit.
+            Integer in tellus sit amet est vestibulum sollicitudin eu ac lectus.
+            Aenean bibendum ex euismod odio posuere malesuada.
           </p>
         </section>
         <section className="mb-12">
           <h2 className="mb-4 text-2xl font-bold">Use of Information</h2>
           <p className="leading-7 text-gray-700">
-            We use personal information collected from our users to provide them
-            with the products and services they request, to improve our website,
-            and to communicate with them about our products, services, and
-            promotions. We do not sell or share personal information with third
-            parties unless required by law.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis
+            semper justo. Sed sed purus quis neque tempus molestie sed vel elit.
+            Integer in tellus sit amet est vestibulum sollicitudin eu ac lectus.
+            Aenean bibendum ex euismod odio posuere malesuada.
           </p>
         </section>
         <section className="mb-12">
           <h2 className="mb-4 text-2xl font-bold">Data Security</h2>
           <p className="leading-7 text-gray-700">
-            We take reasonable measures to protect the personal information
-            provided to us from unauthorized access, use, or disclosure.
-            However, no method of transmission over the internet or electronic
-            storage is completely secure, so we cannot guarantee its absolute
-            security.
-          </p>
-        </section>
-        <section className="mb-12">
-          <h2 className="mb-4 text-2xl font-bold">
-            Changes to this Privacy Policy
-          </h2>
-          <p className="leading-7 text-gray-700">
-            We reserve the right to modify this Privacy Policy at any time. Any
-            changes will be effective immediately upon posting to the website.
-            Your continued use of the website following any such changes
-            constitutes your acceptxance of the new Privacy Policy.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis
+            semper justo. Sed sed purus quis neque tempus molestie sed vel elit.
+            Integer in tellus sit amet est vestibulum sollicitudin eu ac lectus.
+            Aenean bibendum ex euismod odio posuere malesuada.
           </p>
         </section>
       </motion.div>

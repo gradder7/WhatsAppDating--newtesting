@@ -94,3 +94,26 @@ export const rightToLeft: Variants = {
     x: 10,
   },
 };
+
+// for childrens
+export const staggerContainer: Variants = {
+  visible: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.5,
+      delayChildren: 0.2,
+    },
+  },
+  hidden: {
+    opacity: 0,
+  },
+};
+
+export const button: Variants = {
+  hidden: { scale: 0 },
+  visible: { scale: 1, transition: { duration: 0.5 } },
+  animate: {
+    y: [-10, 10, -10],
+    transition: { duration: 1, ease: 'easeInOut', repeat: Infinity },
+  },
+};

@@ -40,7 +40,7 @@ const Benifits3 = () => {
         animate={animation}
         className="w-full md:w-1/2 md:pl-8"
       >
-        <h2 className="mb-4 text-3xl font-bold md:text-4xl">
+        <h2 className="mb-4 text-center text-3xl font-bold  md:text-4xl lg:text-left">
           Title of the text
         </h2>
         <p className="mb-4 text-lg">

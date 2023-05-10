@@ -5,7 +5,12 @@ import { motion, useAnimation } from 'framer-motion';
 import { useEffect } from 'react';
 import { useInView } from 'react-intersection-observer';
 
-import { bottomToTop, leftToRight } from './variants';
+import {
+  bottomToTop,
+  leftToRight,
+  staggerContainer,
+  topToBottom,
+} from './variants';
 
 const Benifits1 = () => {
   const animation = useAnimation();
@@ -44,7 +49,7 @@ const Benifits1 = () => {
         animate={animation}
         variants={bottomToTop}
       >
-        <h2 className="mb-4 text-3xl font-bold md:text-4xl">
+        <h2 className="mb-4 text-center text-3xl font-bold  md:text-4xl lg:text-left">
           Title of the text
         </h2>
         <p className="mb-4 text-lg">
@@ -54,26 +59,40 @@ const Benifits1 = () => {
         </p>
 
         {/* Icons below text */}
-        <div className="flex justify-between">
-          <div className="flex flex-col items-center">
+        <motion.div
+          variants={staggerContainer}
+          animate={animation}
+          className="flex justify-between"
+          style={{ gap: '10px' }}
+        >
+          <motion.div
+            variants={topToBottom}
+            className="flex flex-col items-center"
+          >
             <AddReactionOutlinedIcon
               style={{ color: 'orange', width: '50px', height: '50px' }}
             />
-            <p className="mt-2">Icon 1 Text</p>
-          </div>
-          <div className="flex flex-col items-center">
+            <p className="mt-2">Free</p>
+          </motion.div>
+          <motion.div
+            variants={topToBottom}
+            className="flex flex-col items-center"
+          >
             <Diversity1OutlinedIcon
               style={{ color: 'orange', width: '50px', height: '50px' }}
             />
-            <p className="mt-2">Icon 2 Text</p>
-          </div>
-          <div className="flex flex-col items-center">
+            <p className="mt-2">Connect</p>
+          </motion.div>
+          <motion.div
+            variants={topToBottom}
+            className="flex flex-col items-center"
+          >
             <SentimentSatisfiedOutlinedIcon
               style={{ color: 'orange', width: '50px', height: '50px' }}
             />
-            <p className="mt-2">Icon 3 Text</p>
-          </div>
-        </div>
+            <p className="mt-2">Fun</p>
+          </motion.div>
+        </motion.div>
       </motion.div>
     </div>
   );

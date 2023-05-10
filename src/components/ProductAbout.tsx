@@ -37,7 +37,9 @@ const ProductSection = () => {
         variants={bottomToTop}
         animate={animation}
       >
-        <h2 className="mb-6 text-4xl font-bold">Introducing Our New Product</h2>
+        <h2 className="mb-6 text-4xl  font-bold">
+          Introducing Our New Product
+        </h2>
         <p className="mb-6 text-lg">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non
           risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec,

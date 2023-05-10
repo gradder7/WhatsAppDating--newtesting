@@ -19,7 +19,7 @@ const Footer = () => {
                 </Link>
               </span>
               <span className="mr-4 block md:inline-block">
-                <Link href="/terms-and-conditions">
+                <Link href="/tandc">
                   <span className="cursor-pointer hover:text-white">
                     Terms and Conditions
                   </span>

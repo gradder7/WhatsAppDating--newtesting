@@ -1,6 +1,20 @@
+// import { motion, useAnimation } from 'framer-motion';
+// import { useEffect } from 'react';
+// import { useInView } from 'react-intersection-observer';
+
 import WAButton from './Buttons';
 
 const Usage = () => {
+  // const [ref, inView] = useInView();
+  // const animation = useAnimation();
+
+  // useEffect(() => {
+  //   if (inView) {
+  //     animation.start('visible');
+  //   } else {
+  //     animation.start('hidden');
+  //   }
+  // });
   return (
     <section className="flex flex-col items-center justify-center">
       <div className="flex flex-col border-b-2 md:flex-row md:items-center">
@@ -21,7 +35,10 @@ const Usage = () => {
           </p>
         </div>
         {/* Second column */}
-        <div className="flex items-center justify-center p-4 md:w-1/3">
+        <div
+          // ref={ref}
+          className="flex items-center justify-center p-4 md:w-1/3"
+        >
           <div className="text-center">
             <h3 className="mb-2 text-lg font-bold">Use Now</h3>
             <WAButton />
