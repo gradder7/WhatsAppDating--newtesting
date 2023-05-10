@@ -109,11 +109,22 @@ export const staggerContainer: Variants = {
   },
 };
 
-export const button: Variants = {
-  hidden: { scale: 0 },
-  visible: { scale: 1, transition: { duration: 0.5 } },
-  animate: {
-    y: [-10, 10, -10],
-    transition: { duration: 1, ease: 'easeInOut', repeat: Infinity },
+export const buttonFlowTopDownAnimation: Variants = {
+  visible: {
+    y: [10, 0, 10],
+    transition: { duration: 1.6, ease: 'linear', repeat: Infinity },
+  },
+  hidden: {},
+};
+
+export const bottomToTopForHeroSec: Variants = {
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: { duration: 1, ease: 'easeInOut', delay: 0.8 },
+  },
+  hidden: {
+    opacity: 0,
+    y: 100,
   },
 };

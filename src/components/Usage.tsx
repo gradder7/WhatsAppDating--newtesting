@@ -2,7 +2,10 @@
 // import { useEffect } from 'react';
 // import { useInView } from 'react-intersection-observer';
 
+import { motion } from 'framer-motion';
+
 import WAButton from './Buttons';
+import { buttonFlowTopDownAnimation } from './variants';
 
 const Usage = () => {
   // const [ref, inView] = useInView();
@@ -39,10 +42,15 @@ const Usage = () => {
           // ref={ref}
           className="flex items-center justify-center p-4 md:w-1/3"
         >
-          <div className="text-center">
+          <motion.div
+            variants={buttonFlowTopDownAnimation}
+            initial="hidden"
+            animate="visible"
+            className="text-center"
+          >
             <h3 className="mb-2 text-lg font-bold">Use Now</h3>
             <WAButton />
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>
