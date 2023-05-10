@@ -23,6 +23,7 @@ function MyApp({ Component, pageProps }: AppProps) {
     <>
       <DefaultSeo {...SeoConfig} />
       <SEOtags />
+      {/* <Preloader /> */}
       <Navbar />
       <main className="mb-auto">
         <Component {...pageProps} />
