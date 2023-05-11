@@ -27,7 +27,7 @@ const Benifits1 = () => {
   return (
     <div
       ref={ref}
-      className="flex flex-col items-center justify-center bg-gray-100 py-12 px-4 md:flex-row md:px-24 lg:px-48"
+      className="flex flex-col items-center justify-center bg-gray-200 py-12 px-4 md:flex-row md:px-24 lg:px-48"
     >
       {/* Image on left */}
       <motion.div
