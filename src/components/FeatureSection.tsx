@@ -97,7 +97,7 @@ const FeatureSection = () => {
             quia quis cum id natus nesciunt quos impedit fuga non cumque maxime
             minus, ad dicta rerum error unde? Maiores, dolores.
           </p>
-          <button className=" mt-12 flex items-center rounded-lg bg-blue-500 px-4 py-2 text-white transition duration-300 ease-in-out hover:bg-blue-600">
+          <button className=" mt-12 flex items-center rounded-lg bg-blue-500 px-4 py-2 text-white transition duration-300 ease-in-out hover:bg-blue-600 md:px-6 md:py-4">
             Get Started
             <svg
               xmlns="http://www.w3.org/2000/svg"

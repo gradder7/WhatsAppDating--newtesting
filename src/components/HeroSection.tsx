@@ -20,7 +20,7 @@ const HeroSection = () => {
               adipiscing elit, sed do eiusmod tempor incididunt ut labore et
               dolore magna aliqua.
             </p>
-            <button className="flex items-center rounded-lg bg-blue-500 px-4 py-2 text-white transition duration-300 ease-in-out hover:bg-blue-600">
+            <button className="flex items-center rounded-lg bg-blue-500 px-4 py-2 text-white transition duration-300 ease-in-out hover:bg-blue-600 md:px-14 md:py-5">
               Get Started
               <svg
                 xmlns="http://www.w3.org/2000/svg"
