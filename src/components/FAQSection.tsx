@@ -291,7 +291,7 @@ interface FaqItem {
 }
 
 const FAQ: React.FC = () => {
-  const [faq, setFaq] = useState<FaqItem[]>([
+  const [faq] = useState<FaqItem[]>([
     {
       question: 'What is Lorem Ipsum?',
       answer:
