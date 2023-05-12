@@ -38,7 +38,7 @@ const FAQ: React.FC = () => {
   const [selectedFaq, setSelectedFaq] = useState<number | null>(null);
 
   return (
-    <div className="container  mx-auto mt-16 px-4 md:mt-32 md:px-8">
+    <div className="container  mx-auto md:py-12">
       <div className="grid grid-cols-1 gap-6 md:grid-cols-2 md:gap-12">
         <div>
           <div className="mb-4 flex items-center">
@@ -48,7 +48,9 @@ const FAQ: React.FC = () => {
             />
             <span className="text-sm text-blue-500">WE ARE HAPPY TO HELP</span>
           </div>
-          <h2 className="mb-4 text-3xl  font-bold text-headingColor">FAQ</h2>
+          <h2 className="mb-4 text-3xl font-bold  text-headingColor md:text-4xl">
+            FAQ
+          </h2>
           <ul className="space-y-4">
             {faq.map((item, index) => (
               <li key={index}>

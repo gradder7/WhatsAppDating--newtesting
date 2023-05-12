@@ -6,10 +6,12 @@ import WorkSection from '@/components/WorkSection';
 export default function Home() {
   return (
     <>
-      <HeroSection />
-      <FeatureSection />
-      <WorkSection />
-      <FAQSection />
+      <div className="px-8 md:px-32">
+        <HeroSection />
+        <FeatureSection />
+        <WorkSection />
+        <FAQSection />
+      </div>
     </>
   );
 }

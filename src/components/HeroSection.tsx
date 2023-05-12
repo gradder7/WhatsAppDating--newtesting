@@ -5,20 +5,20 @@ import heroImage from '../../public/assets/images/HeroImage.png';
 
 const HeroSection = () => {
   return (
-    <div className="mt-12 flex min-h-screen items-center justify-center px-4 py-12 md:py-24">
-      <div className="container mx-auto px-4 md:px-8">
+    // items-center justify-center
+    <div className="mt-12 flex min-h-screen  py-20 md:py-40">
+      <div className="container mx-auto">
         <div className="grid grid-cols-1 items-start gap-12 md:grid-cols-2">
           <div>
-            <h1 className="mb-4 text-4xl font-bold text-headingColor md:text-5xl">
+            <h1 className="mb-4 text-4xl font-bold leading-[40px] text-headingColor md:text-6xl md:leading-[67px]">
               The Best <br />
               Relationship
               <br />
               Coaching Service
             </h1>
-            <p className="mb-8 text-lg text-subContentColor md:text-xl">
-              Your text goes here. Lorem ipsum dolor sit amet, consectetur
-              adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua.
+            <p className="mb-8 text-lg text-subContentColor md:text-lg">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+              <br /> sed do eiusmod tempor incididunt aliqua.
             </p>
             <button className="flex items-center rounded-lg bg-blue-500 px-4 py-2 text-white transition duration-300 ease-in-out hover:bg-blue-600 md:px-14 md:py-5">
               Get Started
