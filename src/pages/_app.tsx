@@ -1,4 +1,5 @@
 import '../styles/global.css';
+import '../styles/workSection.css';
 
 import type { AppProps } from 'next/app';
 import { DefaultSeo } from 'next-seo';

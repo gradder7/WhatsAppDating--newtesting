@@ -24,15 +24,15 @@
 // };
 
 // export default WorkSection;
-
 import Diversity1OutlinedIcon from '@mui/icons-material/Diversity1Outlined';
 import React from 'react';
 
 const WorkSection = () => {
   return (
-    <section className="py-16">
+    <section className=" py-16">
       <div className="container mx-auto">
         <div className="mb-4 flex items-center">
+          {/* icon */}
           <Diversity1OutlinedIcon
             style={{ color: 'rgb(30 58 138)', marginRight: '10px' }}
           />
@@ -49,18 +49,10 @@ const WorkSection = () => {
         </p>
         <div className="grid grid-cols-1 gap-8 py-10 sm:grid-cols-2 md:grid-cols-3">
           {/* card bg change */}
-          <div className="rounded-lg pl-0">
+          <div className="dotted__responsive rounded-lg pl-0">
             <div className="flex items-center">
-              <div className=" flex h-10 w-12 items-center justify-center rounded-full bg-blue-500">
+              <div className=" flex h-10 w-10 items-center justify-center rounded-full bg-blue-500">
                 <span className="  text-xl font-medium text-white">1</span>
-              </div>
-              <div className="" style={{ width: '100%', marginLeft: '10px' }}>
-                {/* <div
-                  style={{
-                    borderTop: '2px dotted rgb(59 130 246)',
-                    height: '2px',
-                  }}
-                ></div> */}
               </div>
             </div>
             <h3 className="my-4 text-xl font-bold text-headingColor">Step 1</h3>
@@ -69,7 +61,7 @@ const WorkSection = () => {
               quaerat?
             </p>
           </div>
-          <div className="rounded-lg pl-0">
+          <div className=" dotted__responsive rounded-lg pl-0">
             <div className="mb-4 flex h-10 w-10 items-center justify-center rounded-full bg-blue-500">
               <span className="text-xl font-medium text-white">2</span>
             </div>
@@ -79,7 +71,7 @@ const WorkSection = () => {
               quaerat?
             </p>
           </div>
-          <div className="rounded-l pl-0">
+          <div className="dotted__responsive rounded-l pl-0">
             <div className="mb-4 flex h-10 w-10 items-center justify-center rounded-full bg-blue-500">
               <span className="text-xl font-medium text-white">3</span>
             </div>
