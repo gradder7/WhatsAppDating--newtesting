@@ -117,7 +117,7 @@ const FeatureSection = () => {
               />
             </svg>
           </button> */}
-          <div className="mt-8">
+          <div className="mt-8 text-xl font-bold">
             <a
               href="#"
               className="flex items-center text-blue-500 transition duration-300 ease-in-out hover:text-blue-600"
