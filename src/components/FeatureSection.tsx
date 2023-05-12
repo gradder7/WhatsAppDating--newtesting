@@ -87,7 +87,7 @@ const FeatureSection = () => {
           <h2 className="mb-4 text-3xl font-bold text-blue-900">
             Always By Your Side
           </h2>
-          <p className=" text-blue-700">
+          <p className=" text-subContentColor">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab
             asperiores culpa quae porro! Voluptatem alias quae vel porro
             debitis.

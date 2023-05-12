@@ -9,13 +9,13 @@ const HeroSection = () => {
       <div className="container mx-auto px-4 md:px-8">
         <div className="grid grid-cols-1 items-start gap-12 md:grid-cols-2">
           <div>
-            <h1 className="mb-4 text-4xl font-bold text-blue-900 md:text-5xl">
+            <h1 className="mb-4 text-4xl font-bold text-headingColor md:text-5xl">
               The Best <br />
               Relationship
               <br />
               Coaching Service
             </h1>
-            <p className="mb-8 text-lg text-blue-600 md:text-xl">
+            <p className="mb-8 text-lg text-subContentColor md:text-xl">
               Your text goes here. Lorem ipsum dolor sit amet, consectetur
               adipiscing elit, sed do eiusmod tempor incididunt ut labore et
               dolore magna aliqua.

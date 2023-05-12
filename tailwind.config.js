@@ -57,6 +57,10 @@ module.exports = {
           },
         },
       },
+      colors: {
+        subContentColor: 'rgb(107 114 128)',
+        headingColor: 'rgb(30 58 138)',
+      },
     },
   },
   plugins: [],
