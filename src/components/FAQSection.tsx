@@ -2,9 +2,10 @@ import Diversity1OutlinedIcon from '@mui/icons-material/Diversity1Outlined';
 import KeyboardArrowDownOutlinedIcon from '@mui/icons-material/KeyboardArrowDownOutlined';
 import KeyboardArrowRightOutlinedIcon from '@mui/icons-material/KeyboardArrowRightOutlined';
 import Image from 'next/image';
-import React, { useState } from 'react';
+import React from 'react';
 
 import FAQImg from '../../public/assets/images/faq.png';
+import faqData from './faqData';
 
 interface FaqItem {
   question: string;
@@ -12,30 +13,7 @@ interface FaqItem {
 }
 
 const FAQ: React.FC = () => {
-  const [faq] = useState<FaqItem[]>([
-    {
-      question: 'What is Lorem Ipsum?',
-      answer:
-        'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
-    },
-    {
-      question: 'Why do we use it?',
-      answer:
-        'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.',
-    },
-    {
-      question: 'Where does it come from?',
-      answer:
-        'Contrary to popular belief, Lorem Ipsum is not simply random text.',
-    },
-    {
-      question: 'Where can I get some?',
-      answer:
-        'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.',
-    },
-  ]);
-
-  const [selectedFaq, setSelectedFaq] = useState<number | null>(null);
+  const [selectedFaq, setSelectedFaq] = React.useState<number | null>(null);
 
   return (
     <div className="container  mx-auto md:py-12">
@@ -52,7 +30,7 @@ const FAQ: React.FC = () => {
             FAQ
           </h2>
           <ul className="space-y-4">
-            {faq.map((item, index) => (
+            {faqData.map((item: FaqItem, index: number) => (
               <li key={index}>
                 <button
                   className={`${
@@ -73,7 +51,14 @@ const FAQ: React.FC = () => {
 
                 {selectedFaq === index && (
                   <div>
-                    <p className="mt-2 text-gray-500">{item.answer}</p>
+                    <p
+                      className="mt-2
+                      px-10
+                      text-gray-500
+                      "
+                    >
+                      {item.answer}
+                    </p>
                   </div>
                 )}
               </li>
@@ -89,6 +74,7 @@ const FAQ: React.FC = () => {
 };
 
 export default FAQ;
+
 // faq section
 // import Image from 'next/image';
 // import React from 'react';

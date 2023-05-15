@@ -1,49 +1,14 @@
-// import Head from 'next/head';
-
-// export default function About() {
-//   return (
-//     <div className="flex min-h-screen flex-col items-center justify-center py-2">
-//       <Head>
-//         <title>About Us</title>
-//         <link rel="icon" href="/favicon.ico" />
-//       </Head>
-
-//       <main className="flex flex-1 flex-col items-center justify-center px-20 text-center">
-//         <h1 className="text-5xl font-bold">About Us</h1>
-
-//         <div className="mt-8 text-xl">
-//           <p className="mb-4">
-//             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
-//             ullamcorper elit id elit sodales venenatis. Integer malesuada
-//             lacinia ligula, ac sollicitudin massa imperdiet sed. Nulla facilisi.
-//           </p>
-//           <p className="mb-4">
-//             Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
-//             posuere cubilia curae; Nulla facilisi. Donec vel augue vitae est
-//             accumsan rhoncus vel ac velit.
-//           </p>
-//           <p>
-//             Aliquam malesuada sagittis odio ac pulvinar. Etiam euismod velit id
-//             diam euismod, vel congue sapien hendrerit. Donec euismod mollis
-//             dolor, at egestas purus.
-//           </p>
-//         </div>
-//       </main>
-//     </div>
-//   );
-// }
-
 import React from 'react';
 
 const About = () => {
   return (
-    <div className="mt-32 flex min-h-screen flex-col">
+    <div className="mt-28 flex min-h-screen flex-col px-4 md:px-32">
       <div className="mx-auto max-w-7xl grow py-12 px-4 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-3xl">
-          <h2 className="mb-8 text-center text-3xl font-bold text-gray-900">
+          <h2 className="mb-8 text-center text-3xl font-bold text-headingColor">
             About Us
           </h2>
-          <p className="leading-7 text-gray-700">
+          <p className="leading-6  text-subContentColor">
             Our website uses cookies to enhance the user experience and provide
             personalized content and advertising. Cookies are small data files
             that are placed on a device when they visit our website. Users can

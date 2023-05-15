@@ -7,7 +7,7 @@ import heroImage from '../../public/assets/images/HeroImage.png';
 const HeroSection = () => {
   return (
     // items-center justify-center
-    <div className="mt-12 flex min-h-screen  py-20 md:py-40">
+    <div className=" mt-10 flex min-h-screen items-center justify-center  py-20 md:py-40">
       <div className="container mx-auto">
         <div className="grid grid-cols-1 items-start gap-12 md:grid-cols-2">
           <div>
@@ -23,23 +23,6 @@ const HeroSection = () => {
             </p>
             <button className="flex items-center rounded-lg bg-blue-500 px-4 py-2 text-white transition duration-300 ease-in-out hover:bg-blue-600 md:px-14 md:py-5">
               Get Started
-              {/* <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="ml-2 h-5 w-10"
-                viewBox="0 0 20 20"
-                fill="currentColor"
-              >
-                <path
-                  fillRule="evenodd"
-                  d="M14.707 10l-4.147-4.146a.5.5 0 01.708-.708l4.5 4.5a.5.5 0 010 .708l-4.5 4.5a.5.5 0 11-.708-.708L14.707 10z"
-                  clipRule="evenodd"
-                />
-                <path
-                  fillRule="evenodd"
-                  d="M5 10a.5.5 0 01.5-.5h8.793l-1.646-1.646a.5.5 0 11.708-.708l2.5 2.5a.5.5 0 010 .708l-2.5 2.5a.5.5 0 11-.708-.708L14.293 10H5.5A.5.5 0 015 10z"
-                  clipRule="evenodd"
-                />
-              </svg> */}
               <EastIcon
                 style={{ width: '20px', marginLeft: '6px', marginTop: '2px' }}
               />

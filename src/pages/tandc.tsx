@@ -58,7 +58,7 @@
 //         className="md:col-span-2"
 //       >
 //         <h1 className="mb-8 text-3xl font-bold">Privacy Policy</h1>
-//         <section id="intro" className="mb-12  mt-16 ">
+//         <section id="intro" className="mb-6  mt-16 ">
 //           <h2 className="mb-4 text-2xl font-bold">Introduction</h2>
 //           <p className="leading-7 text-gray-700">
 //             Our website is committed to protecting the privacy and security of
@@ -68,7 +68,7 @@
 //           </p>
 //         </section>
 
-//         <section id="data-collection" className="mb-12">
+//         <section id="data-collection" className="mb-6">
 //           <h2 className="mb-4 text-2xl font-bold">Data Collection</h2>
 //           <p className="leading-7 text-gray-700">
 //             We collect personal information from our users when they voluntarily
@@ -79,7 +79,7 @@
 //           </p>
 //         </section>
 
-//         <section id="cookies" className="mt-32 mb-12">
+//         <section id="cookies" className="mt-32 mb-6">
 //           <h2 className="mb-4 text-2xl font-bold">Cookies</h2>
 //           <p className="leading-7 text-gray-700">
 //             Our website uses cookies to enhance the user experience and provide
@@ -89,7 +89,7 @@
 //           </p>
 //         </section>
 
-//         <section id="use-of-information" className="mb-12">
+//         <section id="use-of-information" className="mb-6">
 //           <h2 className="mb-4 text-2xl font-bold">Use of Information</h2>
 //           <p className="leading-7 text-gray-700">
 //             We may use the personal information collected from our users to
@@ -101,7 +101,7 @@
 //             or conducting our business.
 //           </p>
 //         </section>
-//         <section id="data-security" className="mb-12">
+//         <section id="data-security" className="mb-6">
 //           <h2 className="mb-4 text-2xl font-bold">Data Security</h2>
 //           <p className="leading-7 text-gray-700">
 //             We take appropriate measures to ensure the security of the personal
@@ -112,7 +112,7 @@
 //           </p>
 //         </section>
 
-//         <section className="mb-12">
+//         <section className="mb-6">
 //           <h2 className="mb-4 text-2xl font-bold">
 //             Changes to This Privacy Policy
 //           </h2>
@@ -124,7 +124,7 @@
 //           </p>
 //         </section>
 
-//         <section className="mb-12">
+//         <section className="mb-6">
 //           <h2 className="mb-4 text-2xl font-bold">Contact Us</h2>
 //           <p className="leading-7 text-gray-700">
 //             If you have any questions or concerns regarding this Privacy Policy,
@@ -141,12 +141,12 @@ import { motion } from 'framer-motion';
 
 const PrivacyPolicy = () => {
   return (
-    <div className="container mx-auto mt-20 py-10 px-4 md:px-8 lg:px-16">
+    <div className="container mx-auto mt-20 px-8 py-10  md:px-32  lg:px-16">
       <motion.h1
         initial={{ opacity: 0, y: -10 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1, ease: 'easeInOut' }}
-        className="mb-8 text-center text-3xl font-bold"
+        className="mb-8 text-center text-3xl font-bold text-headingColor"
       >
         Terms and Conditions
       </motion.h1>
@@ -155,45 +155,53 @@ const PrivacyPolicy = () => {
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 1, ease: 'easeInOut' }}
       >
-        <section className="mb-12">
-          <h2 className="mb-4 text-2xl font-bold">Introduction</h2>
-          <p className="leading-7 text-gray-700">
+        <section className="mb-6">
+          <h2 className="mb-4 text-2xl font-bold text-headingColor">
+            Introduction
+          </h2>
+          <p className="leading-6 text-subContentColor">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis
             semper justo. Sed sed purus quis neque tempus molestie sed vel elit.
             Integer in tellus sit amet est vestibulum sollicitudin eu ac lectus.
             Aenean bibendum ex euismod odio posuere malesuada.
           </p>
         </section>
-        <section className="mb-12">
-          <h2 className="mb-4 text-2xl font-bold">Data Collection</h2>
-          <p className="leading-7 text-gray-700">
+        <section className="mb-6">
+          <h2 className="mb-4 text-2xl font-bold text-headingColor">
+            Data Collection
+          </h2>
+          <p className="leading-6 text-subContentColor">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis
             semper justo. Sed sed purus quis neque tempus molestie sed vel elit.
             Integer in tellus sit amet est vestibulum sollicitudin eu ac lectus.
             Aenean bibendum ex euismod odio posuere malesuada.
           </p>
         </section>
-        <section className="mb-12">
-          <h2 className="mb-4 text-2xl font-bold">Cookies</h2>
-          <p className="leading-7 text-gray-700">
+        <section className="mb-6">
+          <h2 className="mb-4 text-2xl font-bold text-headingColor">Cookies</h2>
+          <p className="leading-6 text-subContentColor">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis
             semper justo. Sed sed purus quis neque tempus molestie sed vel elit.
             Integer in tellus sit amet est vestibulum sollicitudin eu ac lectus.
             Aenean bibendum ex euismod odio posuere malesuada.
           </p>
         </section>
-        <section className="mb-12">
-          <h2 className="mb-4 text-2xl font-bold">Use of Information</h2>
-          <p className="leading-7 text-gray-700">
+        <section className="mb-6">
+          <h2 className="mb-4 text-2xl font-bold text-headingColor">
+            Use of Information
+          </h2>
+          <p className="leading-6 text-subContentColor">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis
             semper justo. Sed sed purus quis neque tempus molestie sed vel elit.
             Integer in tellus sit amet est vestibulum sollicitudin eu ac lectus.
             Aenean bibendum ex euismod odio posuere malesuada.
           </p>
         </section>
-        <section className="mb-12">
-          <h2 className="mb-4 text-2xl font-bold">Data Security</h2>
-          <p className="leading-7 text-gray-700">
+        <section className="mb-6">
+          <h2 className="mb-4 text-2xl font-bold text-headingColor">
+            Data Security
+          </h2>
+          <p className=" leading-6 text-subContentColor">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis
             semper justo. Sed sed purus quis neque tempus molestie sed vel elit.
             Integer in tellus sit amet est vestibulum sollicitudin eu ac lectus.
