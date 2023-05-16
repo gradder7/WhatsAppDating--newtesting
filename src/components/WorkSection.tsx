@@ -1,29 +1,3 @@
-// import Diversity1OutlinedIcon from '@mui/icons-material/Diversity1Outlined';
-// import React from 'react';
-
-// const WorkSection = () => {
-//   return (
-//     <section className="">
-//       <div className="container mx-auto mt-16 px-4 md:mt-28 md:px-8">
-//         <div className="mb-4 flex items-center">
-//           {/* icon */}
-//           <Diversity1OutlinedIcon
-//             style={{ color: 'rgb(30 58 138)', marginRight: '10px' }}
-//           />
-//           <span className="text-sm text-blue-500">WE ARE HAPPY TO HELP</span>
-//         </div>
-//         <h2 className="mb-4 text-3xl font-bold text-blue-900">How it Works?</h2>
-//         <p className=" text-blue-700">
-//           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab
-//           asperiores culpa quae porro! Voluptatem alias quae vel porro debitis.
-//           <br />
-//         </p>
-//       </div>
-//     </section>
-//   );
-// };
-
-// export default WorkSection;
 import Diversity1OutlinedIcon from '@mui/icons-material/Diversity1Outlined';
 import React from 'react';
 
@@ -36,18 +10,16 @@ const WorkSection = () => {
           <Diversity1OutlinedIcon
             style={{ color: 'rgb(30 58 138)', marginRight: '10px' }}
           />
-          <span className="text-sm font-medium text-blue-500">
-            WE ARE HAPPY TO HELP
-          </span>
+          <span className="text-sm font-medium text-blue-500">OUR PROCESS</span>
         </div>
-        <h2 className="mb-4 text-3xl font-bold text-headingColor md:text-4xl">
+        <h2 className="mb-4 text-3xl font-bold text-headingColor lg:text-4xl">
           How it Works?
         </h2>
         <p className="leading-relaxed text-subContentColor">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere,
-          quaerat?
+          Ignite Your Curiosity and Connect with Strangers through Random Chats
+          on WhatsApp.
         </p>
-        <div className="grid grid-cols-1 gap-8 py-10 sm:grid-cols-2 md:grid-cols-3">
+        <div className="grid grid-cols-1 gap-8 py-10 md:grid-cols-3">
           {/* card bg change */}
           <div className="dotted__responsive rounded-lg pl-0">
             <div className="flex items-center">
@@ -57,8 +29,8 @@ const WorkSection = () => {
             </div>
             <h3 className="my-4 text-xl font-bold text-headingColor">Step 1</h3>
             <p className="leading-relaxed text-subContentColor">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere,
-              quaerat?
+              Send a &ldquo;Hi&rdquo; message to our WhatsApp number to get
+              started.
             </p>
           </div>
           <div className=" dotted__responsive rounded-lg pl-0">
@@ -67,8 +39,8 @@ const WorkSection = () => {
             </div>
             <h3 className="mb-4 text-xl font-bold text-headingColor">Step 2</h3>
             <p className="leading-relaxed text-subContentColor">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere,
-              quaerat?
+              Fill out your profile with information about yourself, including
+              your interests, and gender.
             </p>
           </div>
           <div className="dotted__responsive rounded-l pl-0">
@@ -77,8 +49,8 @@ const WorkSection = () => {
             </div>
             <h3 className="mb-4 text-xl font-bold text-headingColor">Step 3</h3>
             <p className="leading-relaxed text-subContentColor">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere,
-              quaerat?
+              Start chatting anonymously with strangers who share similar
+              interests.
             </p>
           </div>
         </div>

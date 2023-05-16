@@ -26,7 +26,7 @@ const FAQ: React.FC = () => {
             />
             <span className="text-sm text-blue-500">WE ARE HAPPY TO HELP</span>
           </div>
-          <h2 className="mb-4 text-3xl font-bold  text-headingColor md:text-4xl">
+          <h2 className="mb-4 text-3xl font-bold  text-headingColor lg:text-4xl">
             FAQ
           </h2>
           <ul className="space-y-4">
@@ -65,8 +65,12 @@ const FAQ: React.FC = () => {
             ))}
           </ul>
         </div>
-        <div>
-          <Image src={FAQImg} alt="Your-Image" />
+        <div className="h-full w-full">
+          <Image
+            src={FAQImg}
+            alt="Your-Image"
+            className="h-full w-full object-cover"
+          />
         </div>
       </div>
     </div>
@@ -74,92 +78,3 @@ const FAQ: React.FC = () => {
 };
 
 export default FAQ;
-
-// faq section
-// import Image from 'next/image';
-// import React from 'react';
-
-// import FAQImg from '../../public/assets/images/FAQ.png';
-
-// const ImageTextSection = () => {
-//   return (
-//     <div className="container mx-auto px-4 md:px-8">
-//       <div className="grid grid-cols-1 items-start gap-12 md:grid-cols-2">
-//         <div>
-//           <div className="mb-4 flex items-center">
-//             {/* icon */}
-//             <span className="text-sm text-gray-500">Small text after icon</span>
-//           </div>
-//           <h2 className="mb-4 text-3xl font-bold">Section Heading</h2>
-//         </div>
-//         <div>
-//           <Image src={FAQImg} alt="Your Image" />
-//         </div>
-//       </div>
-//     </div>
-//   );
-// };
-
-// import Image from 'next/image';
-// import React, { useState } from 'react';
-
-// import FAQImg from '../../public/assets/images/FAQ.png';
-
-// const faqs = [
-//   {
-//     question: 'Question 1',
-//     answer: 'Answer 1',
-//   },
-//   {
-//     question: 'Question 2',
-//     answer: 'Answer 2',
-//   },
-//   {
-//     question: 'Question 3',
-//     answer: 'Answer 3',
-//   },
-// ];
-
-// const FaqSection = () => {
-//   const [selectedFaq, setSelectedFaq] = useState(null);
-
-//   const handleFaqClick = (index: number | React.SetStateAction<null>) => {
-//     if (selectedFaq === index) {
-//       setSelectedFaq(null);
-//     } else {
-//       setSelectedFaq(index);
-//     }
-//   };
-
-//   return (
-//     <div className="bg-gray-50 py-16">
-//       <div className="container mx-auto px-4 md:px-8">
-//         <div className="grid grid-cols-1 gap-12 md:grid-cols-2">
-//           <div>
-//             <h2 className="mb-4 text-3xl font-bold">FAQs</h2>
-//             <div className="space-y-4">
-//               {faqs.map((faq, index) => (
-//                 <div key={index}>
-//                   <button
-//                     className="w-full text-left text-lg font-medium"
-//                     onClick={() => handleFaqClick(index)}
-//                   >
-//                     {faq.question}
-//                   </button>
-//                   {selectedFaq === index && (
-//                     <div className="mt-2 text-gray-600">{faq.answer}</div>
-//                   )}
-//                 </div>
-//               ))}
-//             </div>
-//           </div>
-//           <div className="flex justify-center">
-//             <Image src={FAQImg} alt="FAQ" />
-//           </div>
-//         </div>
-//       </div>
-//     </div>
-//   );
-// };
-
-// export default FaqSection;

@@ -11,7 +11,7 @@
   width: calc(100% - 3.9375rem);
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 799px) {
   .dotted__responsive p,
   h3 {
     padding-left: 59px;
